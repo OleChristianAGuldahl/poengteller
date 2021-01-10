@@ -8,16 +8,18 @@ Spilleren får poeng for hvert tall som gjettes riktig.
 Åpne main.py filen for å se brukerveiledningen. 
 
 
-#Anvisning
+# Anvisning
 
 Først begynner vi med å importere nødvendige biblioteker
+```
+# Importerer random-biblioteket
+import random
+```
 
 Deretter opprettes verdiene vi trenger
 
 ```
-# Importerer random-biblioteket
-import random                                           
-
+ 
 # Oppretter ett tilfeldig tall mellom 0-3
 tilfeldig_tall = random.randint(0, 3)
 # Begynner med at poensummen til spilleren er null
