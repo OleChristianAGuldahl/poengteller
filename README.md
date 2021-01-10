@@ -60,14 +60,14 @@ Vi lager nytt tilfeldig tall hvis spilleren har gjettet riktig med kommandoen ra
             # Merk vi konverterer poengsummen til string når den skal skrives ut
             tilfeldig_tall = random.randint(0, 3)
 ```
-Vi sjekker om spillern vill avslutte. Hvis spilleren avslutter bruker vi komandoen `exit()`
+Vi sjekker om spilleren vill avslutte. Hvis spilleren avslutter bruker vi komandoen `exit()`
 ```
             # Hvis spiler skriver 99. Skriver hadet bra
         elif int(svar) == int(99):
             print("Avslutt")
             exit()
 ```
-Hvis vi spilleren gjetter alt annet en riktig - eller 99 sier vi at spilleren har gjettet feil
+Hvis spilleren gjetter alt annet en riktig - eller 99 sier vi at spilleren har gjettet feil
 ```            # Hvis spillern gjettet feil
         else:
             print("Desverre feil, gjett igjen")
