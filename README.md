@@ -1,25 +1,10 @@
 # poengteller
-Løsningsforslag på oppgave Poengteller.
+Løsningsforslag på oppgave Poengteller. Lagd i Python
 
 Spille går ut på at man skal gjette tall mellom 0-3.
 
 Spilleren får poeng for hvert tall som gjettes riktig.
 
-Starter med at programmet finner ett tilfeldig tall
+Åpne main.py filen for å se brukerveiledningen. 
 
-`tilfeldig_tall = random.randint(0, 3)`
 
-Brukeren skriver inn ett tall:
-
- ` svar = input("Gjett ett tall mellom 0 og 10 (skriv 99 for å avslutte spillet): ") `
-
-Sjekker om brukeren har gjettet riktig tall:
-
- ` if int(svar) == int(tilfeldig_tall):`
- 
- Hvis riktig tall er gjettet, får spilleren ett nytt poeng og nytt gjettetall lages:
- ```poengsum +=1
-        print ("Riktig, din poensum er nå: " + str(poengsum))
-        tilfeldig_tall = random.randint(0, 2)
- ```
-Hvis spillern gjetter feil, kan man gjette på nytt.
