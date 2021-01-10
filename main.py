@@ -34,6 +34,7 @@ while svar != "99":
             # Hvis spiler skriver 99. Skriver hadet bra
         elif int(svar) == int(99):
             print("Avslutt")
+            exit()
 
             # Hvis spillern gjettet feil
         else:
@@ -41,7 +42,7 @@ while svar != "99":
 
     # Ved feil gis tilbakemelding til spillern
     except ValueError:
-        print("SKRIV TALL DIN TAPER!!")
+        print("SKRIV TALL!!")
         
     
 
