@@ -31,9 +31,11 @@ svar = ""
 
 Så starter man en løkke ved hjelp av kommandoen `while`.
 
-Inne i while-løkken har vi først feilhåndteringsrutiner.
+Inne i while-løkken har vi først feilhåndteringsrutiner med kommandoen `try`.
 
-Så tar vi imot svaret fra brukeren med kommandorn `input`. 
+Legg merke til at på slutten av løkken er kommandoen `except` som viser tilbakemelding til spilleren hvis det oppstår en feil.
+
+Så tar vi imot svaret fra brukeren med kommandoen `input`. 
 
 
 ```
@@ -44,15 +46,22 @@ while svar != "99":
     # Legger på feilhåndtering, så programmet ikke avsluttes viss spillern skriver en bokstav
     try:
         svar = input("Gjett ett tall mellom 0 og 3(skriv 99 for å avslutte spillet): ")
-        
+```
+Vi konverterer svaret fra bruken og det tilfeldige tallet til heltall.
+
+Hvis spilleren har gjettet riktig legges det til ett poeng til poensummen
+ ```
         if int(svar) == int(tilfeldig_tall):
             # Merk vi konverterer både svar tilfeldig tall til heltall
             # Legger til ett poeng til poeng summen hvis riktig 
             poengsum +=1
             print ("Riktig, din poensum er nå: " + str(poengsum))
+```
+Vi lager nytt tilfeldig tall hvis spilleren har gjettet riktig med kommandoen random. randint betyr at det skal lages ett heltall. I parantesen skriver man inn intervallet man ønsker tallet fra.
+```
             # Merk vi konverterer poengsummen til string når den skal skrives ut
-            tilfeldig_tall = random.randint(0, 2)
-
+            tilfeldig_tall = random.randint(0, 3)
+```
             # Hvis spiler skriver 99. Skriver hadet bra
         elif int(svar) == int(99):
             print("Avslutt")
@@ -67,4 +76,4 @@ while svar != "99":
         print("SKRIV TALL!!")
         
     
-```
+
