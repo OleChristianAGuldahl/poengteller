@@ -1,7 +1,7 @@
 # poengteller
 Løsningsforslag på oppgave Poengteller.
 
-Spille går ut på at man skal gjette tall mellom 0-9.
+Spille går ut på at man skal gjette tall mellom 0-3.
 
 Spilleren får poeng for hvert tall som gjettes riktig.
 
@@ -22,3 +22,4 @@ Sjekker om brukeren har gjettet riktig tall:
         print ("Riktig, din poensum er nå: " + str(poengsum))
         tilfeldig_tall = random.randint(0, 2)
  ```
+Hvis spillern gjetter feil, kan man gjette på nytt.
