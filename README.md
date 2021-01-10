@@ -9,6 +9,7 @@ Spilleren får poeng for hvert tall som gjettes riktig.
 
 
 #Anvisning
+
 Først begynner vi med å importere nødvendige biblioteker
 
 Deretter opprettes verdiene vi trenger
