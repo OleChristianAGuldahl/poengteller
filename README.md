@@ -7,7 +7,7 @@ Spilleren får poeng for hvert tall som gjettes riktig.
 
 Starter med at programmet finner ett tilfeldig tall
 
-`lodd = random.randint(0, 3)`
+`tilfeldig_tall = random.randint(0, 3)`
 
 Brukeren skriver inn ett tall:
 
@@ -15,10 +15,10 @@ Brukeren skriver inn ett tall:
 
 Sjekker om brukeren har gjettet riktig tall:
 
- ` if int(svar) == int(lodd):`
+ ` if int(svar) == int(tilfeldig_tall):`
  
  Hvis riktig tall er gjettet, får spilleren ett nytt poeng og nytt gjettetall lages:
  ```poengsum +=1
         print ("Riktig, din poensum er nå: " + str(poengsum))
-        lodd = random.randint(0, 2)
+        tilfeldig_tall = random.randint(0, 2)
  ```
