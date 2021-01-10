@@ -10,9 +10,10 @@ Spilleren får poeng for hvert tall som gjettes riktig.
 
 #Anvisning
 Først begynner vi med å importere nødvendige biblioteker
+
 Deretter opprettes verdiene vi trenger
 
-`
+```
 # Importerer random-biblioteket
 import random                                           
 
@@ -23,7 +24,7 @@ poengsum=0
 
 # Begynner med blankt svar
 svar = ""
-`
+```
 
 Så starter man en løkke ved hjelp av kommandoen `while`.
 
