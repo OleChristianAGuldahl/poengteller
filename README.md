@@ -33,7 +33,7 @@ Inne i while-løkken har vi først feilhåndteringsrutiner.
 Så tar vi imot svaret fra brukeren med kommandorn `input`. 
 
 
-`
+```
 # Lager en løkke, hvor spilleren kan skrive inn tall
 # Hvis svaret er ikke 99 sjekkes svaret mot det tilfeldige tallet
 # Løkken forsetter helt til spilleren skriver inn 99
@@ -64,4 +64,4 @@ while svar != "99":
         print("SKRIV TALL!!")
         
     
-`
+```
